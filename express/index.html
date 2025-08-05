@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>ניהול מורים</title>
+</head>
+<body dir="rtl">
+  <h1>מערכת ניהול מורים</h1>
+
+  <h2>1. הצגת כל המורים</h2>
+  <form action="/teachers" method="get">
+    <button type="submit"> הצג את כל המורים</button>
+  </form>
+  <hr>
+  <h2>2. מורים עם שכר נמוך מסכום מסוים</h2>
+  <form action="/low-salary" method="post">
+    <input type="number" name="salary" placeholder="הכנס שכר מקסימלי" required>
+    <button type="submit">חפש</button>
+  </form>
+  <hr>
+  <h2>3. הוספת מורה חדש</h2>
+  <form action="/add-teacher" method="post">
+    <input type="text" name="name" placeholder="שם מלא" required>
+    <input type="text" name="id" placeholder="ת"ז" required>
+    <input type="number" name="salary" placeholder="שכר" required>
+    <input type="text" name="subject" placeholder="מקצוע" required>
+    <button type="submit">הוסף מורה</button>
+  </form>
+</body>
+</html>
